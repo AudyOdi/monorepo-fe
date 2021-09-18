@@ -1,22 +1,16 @@
 {
-  "name": "coin-prices",
+  "name": "@audy/coin-prices",
   "version": "1.0.0",
   "description": "> TODO: description",
   "author": "Audy Tanudjaja <audy.tanudjaja@shopee.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/coin-prices.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
-  "publishConfig": {
-    "registry": "https://npm.shopee.io/"
-  },
+  "main": "src/index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.15.4"
   }
 }
