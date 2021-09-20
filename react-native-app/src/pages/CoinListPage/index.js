@@ -8,10 +8,11 @@ import {
   Portal,
   Provider,
 } from 'react-native-paper';
+import {PAGE_NAME as NewsListPageName} from '@audy/news-portal';
 
 import {fetchCoinPriceList} from '@audy/coin-prices';
 
-const App = () => {
+const App = ({navigation}) => {
   const [coinPriceList, setCoinPriceList] = useState([]);
   const [isFABOpened, setFABOpenState] = useState(false);
 
@@ -51,7 +52,7 @@ const App = () => {
               {
                 icon: 'newspaper',
                 label: 'News',
-                onPress: () => console.log('Pressed add'),
+                onPress: () => navigation.navigate(NewsListPageName),
               },
             ]}
             onStateChange={onFABStateChange}

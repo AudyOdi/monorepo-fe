@@ -1,5 +1,10 @@
 {
-  "packages": ["packages/*", "react-web", "react-native-app"],
+  "packages": [
+    "packages/*",
+    "react-web",
+    "react-native-app",
+    "react-native-app/packages/*"
+  ],
   "version": "independent",
   "npmClient": "yarn"
 }
